@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useMemo, useState } from 'react';
+import Script from 'next/script';
 
 type FormState = {
   name: string;
@@ -739,7 +740,9 @@ export default function Page() {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <form onSubmit={onSubmit} className="space-y-4">
+              <Script src="https://js-na2.hsforms.net/forms/embed/244642337.js" defer></Script>
+<div className="hs-form-frame" data-region="na2" data-form-id="ae5903b6-df7b-4c95-8782-60535cb9b568" data-portal-id="244642337"></div>
+              {/* <form onSubmit={onSubmit} className="space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <label className="text-xs font-semibold text-slate-700">Full name</label>
@@ -855,7 +858,7 @@ export default function Page() {
                 <div className="text-xs text-slate-500">
                   By submitting, you agree to be contacted by ASAS Global FZE / Basiq360 regarding Secure QR.
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>
